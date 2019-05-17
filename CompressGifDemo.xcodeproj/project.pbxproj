@@ -15,6 +15,10 @@
 		84897A18228E89A3001832D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84897A17228E89A3001832D7 /* main.m */; };
 		84897A22228E89A3001832D7 /* CompressGifDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84897A21228E89A3001832D7 /* CompressGifDemoTests.m */; };
 		84897A2D228E89A3001832D7 /* CompressGifDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84897A2C228E89A3001832D7 /* CompressGifDemoUITests.m */; };
+		84897A3F228E8B35001832D7 /* UIImageView+PlayGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 84897A3B228E8B35001832D7 /* UIImageView+PlayGIF.m */; };
+		84897A40228E8B35001832D7 /* UIImage+ScallGif.m in Sources */ = {isa = PBXBuildFile; fileRef = 84897A3D228E8B35001832D7 /* UIImage+ScallGif.m */; };
+		84897A43228E8E16001832D7 /* source2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84897A41228E8E16001832D7 /* source2.gif */; };
+		84897A44228E8E16001832D7 /* source1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84897A42228E8E16001832D7 /* source1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		84897A28228E89A3001832D7 /* CompressGifDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompressGifDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84897A2C228E89A3001832D7 /* CompressGifDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressGifDemoUITests.m; sourceTree = "<group>"; };
 		84897A2E228E89A3001832D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84897A3B228E8B35001832D7 /* UIImageView+PlayGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PlayGIF.m"; sourceTree = "<group>"; };
+		84897A3C228E8B35001832D7 /* UIImageView+PlayGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PlayGIF.h"; sourceTree = "<group>"; };
+		84897A3D228E8B35001832D7 /* UIImage+ScallGif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScallGif.m"; sourceTree = "<group>"; };
+		84897A3E228E8B35001832D7 /* UIImage+ScallGif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScallGif.h"; sourceTree = "<group>"; };
+		84897A41228E8E16001832D7 /* source2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = source2.gif; sourceTree = "<group>"; };
+		84897A42228E8E16001832D7 /* source1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = source1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,13 @@
 		84897A07228E89A2001832D7 /* CompressGifDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84897A42228E8E16001832D7 /* source1.gif */,
+				84897A41228E8E16001832D7 /* source2.gif */,
 				84897A08228E89A2001832D7 /* AppDelegate.h */,
 				84897A09228E89A2001832D7 /* AppDelegate.m */,
 				84897A0B228E89A2001832D7 /* ViewController.h */,
 				84897A0C228E89A2001832D7 /* ViewController.m */,
+				84897A3A228E8B12001832D7 /* Tools */,
 				84897A0E228E89A2001832D7 /* Main.storyboard */,
 				84897A11228E89A3001832D7 /* Assets.xcassets */,
 				84897A13228E89A3001832D7 /* LaunchScreen.storyboard */,
@@ -130,6 +143,17 @@
 				84897A2E228E89A3001832D7 /* Info.plist */,
 			);
 			path = CompressGifDemoUITests;
+			sourceTree = "<group>";
+		};
+		84897A3A228E8B12001832D7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				84897A3E228E8B35001832D7 /* UIImage+ScallGif.h */,
+				84897A3D228E8B35001832D7 /* UIImage+ScallGif.m */,
+				84897A3C228E8B35001832D7 /* UIImageView+PlayGIF.h */,
+				84897A3B228E8B35001832D7 /* UIImageView+PlayGIF.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +218,9 @@
 		848979FD228E89A2001832D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					size1,
+				);
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = ydd;
 				TargetAttributes = {
@@ -235,7 +262,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84897A43228E8E16001832D7 /* source2.gif in Resources */,
 				84897A15228E89A3001832D7 /* LaunchScreen.storyboard in Resources */,
+				84897A44228E8E16001832D7 /* source1.gif in Resources */,
 				84897A12228E89A3001832D7 /* Assets.xcassets in Resources */,
 				84897A10228E89A2001832D7 /* Main.storyboard in Resources */,
 			);
@@ -263,8 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84897A0D228E89A2001832D7 /* ViewController.m in Sources */,
+				84897A40228E8B35001832D7 /* UIImage+ScallGif.m in Sources */,
 				84897A18228E89A3001832D7 /* main.m in Sources */,
 				84897A0A228E89A2001832D7 /* AppDelegate.m in Sources */,
+				84897A3F228E8B35001832D7 /* UIImageView+PlayGIF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F7D4C878S;
 				INFOPLIST_FILE = CompressGifDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F7D4C878S;
 				INFOPLIST_FILE = CompressGifDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
