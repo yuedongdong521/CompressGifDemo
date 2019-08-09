@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84398E9922FD73290034B888 /* CompressGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84398E9822FD73290034B888 /* CompressGif.swift */; };
+		84398E9B22FD74540034B888 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84398E9A22FD74540034B888 /* GifViewController.swift */; };
+		84398E9D22FD7E090034B888 /* source1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84398E9C22FD7E090034B888 /* source1.gif */; };
 		84897A0A228E89A2001832D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84897A09228E89A2001832D7 /* AppDelegate.m */; };
 		84897A0D228E89A2001832D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84897A0C228E89A2001832D7 /* ViewController.m */; };
 		84897A10228E89A2001832D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84897A0E228E89A2001832D7 /* Main.storyboard */; };
@@ -18,7 +21,6 @@
 		84897A3F228E8B35001832D7 /* UIImageView+PlayGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 84897A3B228E8B35001832D7 /* UIImageView+PlayGIF.m */; };
 		84897A40228E8B35001832D7 /* UIImage+ScallGif.m in Sources */ = {isa = PBXBuildFile; fileRef = 84897A3D228E8B35001832D7 /* UIImage+ScallGif.m */; };
 		84897A43228E8E16001832D7 /* source2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84897A41228E8E16001832D7 /* source2.gif */; };
-		84897A44228E8E16001832D7 /* source1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84897A42228E8E16001832D7 /* source1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84398E9722FD73280034B888 /* CompressGifDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CompressGifDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		84398E9822FD73290034B888 /* CompressGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressGif.swift; sourceTree = "<group>"; };
+		84398E9A22FD74540034B888 /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
+		84398E9C22FD7E090034B888 /* source1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = source1.gif; sourceTree = "<group>"; };
 		84897A05228E89A2001832D7 /* CompressGifDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompressGifDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84897A08228E89A2001832D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84897A09228E89A2001832D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,7 +66,6 @@
 		84897A3D228E8B35001832D7 /* UIImage+ScallGif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScallGif.m"; sourceTree = "<group>"; };
 		84897A3E228E8B35001832D7 /* UIImage+ScallGif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScallGif.h"; sourceTree = "<group>"; };
 		84897A41228E8E16001832D7 /* source2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = source2.gif; sourceTree = "<group>"; };
-		84897A42228E8E16001832D7 /* source1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = source1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +116,13 @@
 		84897A07228E89A2001832D7 /* CompressGifDemo */ = {
 			isa = PBXGroup;
 			children = (
-				84897A42228E8E16001832D7 /* source1.gif */,
+				84398E9C22FD7E090034B888 /* source1.gif */,
 				84897A41228E8E16001832D7 /* source2.gif */,
 				84897A08228E89A2001832D7 /* AppDelegate.h */,
 				84897A09228E89A2001832D7 /* AppDelegate.m */,
 				84897A0B228E89A2001832D7 /* ViewController.h */,
 				84897A0C228E89A2001832D7 /* ViewController.m */,
+				84398E9A22FD74540034B888 /* GifViewController.swift */,
 				84897A3A228E8B12001832D7 /* Tools */,
 				84897A0E228E89A2001832D7 /* Main.storyboard */,
 				84897A11228E89A3001832D7 /* Assets.xcassets */,
@@ -148,10 +154,12 @@
 		84897A3A228E8B12001832D7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				84398E9822FD73290034B888 /* CompressGif.swift */,
 				84897A3E228E8B35001832D7 /* UIImage+ScallGif.h */,
 				84897A3D228E8B35001832D7 /* UIImage+ScallGif.m */,
 				84897A3C228E8B35001832D7 /* UIImageView+PlayGIF.h */,
 				84897A3B228E8B35001832D7 /* UIImageView+PlayGIF.m */,
+				84398E9722FD73280034B888 /* CompressGifDemo-Bridging-Header.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -226,6 +234,7 @@
 				TargetAttributes = {
 					84897A04228E89A2001832D7 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1030;
 					};
 					84897A1C228E89A3001832D7 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -264,7 +273,7 @@
 			files = (
 				84897A43228E8E16001832D7 /* source2.gif in Resources */,
 				84897A15228E89A3001832D7 /* LaunchScreen.storyboard in Resources */,
-				84897A44228E8E16001832D7 /* source1.gif in Resources */,
+				84398E9D22FD7E090034B888 /* source1.gif in Resources */,
 				84897A12228E89A3001832D7 /* Assets.xcassets in Resources */,
 				84897A10228E89A2001832D7 /* Main.storyboard in Resources */,
 			);
@@ -293,9 +302,11 @@
 			files = (
 				84897A0D228E89A2001832D7 /* ViewController.m in Sources */,
 				84897A40228E8B35001832D7 /* UIImage+ScallGif.m in Sources */,
+				84398E9922FD73290034B888 /* CompressGif.swift in Sources */,
 				84897A18228E89A3001832D7 /* main.m in Sources */,
 				84897A0A228E89A2001832D7 /* AppDelegate.m in Sources */,
 				84897A3F228E8B35001832D7 /* UIImageView+PlayGIF.m in Sources */,
+				84398E9B22FD74540034B888 /* GifViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F7D4C878S;
 				INFOPLIST_FILE = CompressGifDemo/Info.plist;
@@ -476,6 +488,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ydd.test.CompressGifDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CompressGifDemo/Tools/CompressGifDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -484,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F7D4C878S;
 				INFOPLIST_FILE = CompressGifDemo/Info.plist;
@@ -494,6 +510,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ydd.test.CompressGifDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CompressGifDemo/Tools/CompressGifDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -501,6 +519,7 @@
 		84897A35228E89A3001832D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CompressGifDemoTests/Info.plist;
@@ -519,6 +538,7 @@
 		84897A36228E89A3001832D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CompressGifDemoTests/Info.plist;
@@ -537,6 +557,7 @@
 		84897A38228E89A3001832D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CompressGifDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -554,6 +575,7 @@
 		84897A39228E89A3001832D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CompressGifDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

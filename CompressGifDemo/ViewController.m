@@ -12,6 +12,8 @@
 
 #import "UIImageView+PlayGIF.h"
 
+#import "CompressGifDemo-Swift.h"
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *orignSize;
@@ -25,6 +27,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -35,7 +38,6 @@
     self.orignSize.text = [NSString stringWithFormat:@"%.2fKb", gifData.length / 1024.0];
     
     self.orignImageView.gifData = gifData;
-    
     
     CGSize imageSize = [UIImage imageNamed:@"source2.gif"].size;
     
@@ -53,6 +55,12 @@
     [super viewDidAppear:animated];
     [self.orignImageView startGIF];
     [self.compressImageView startGIF];
+}
+
+- (IBAction)openSwiftVC:(id)sender {
+    
+    GifViewController *vc = [GifViewController new];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 
